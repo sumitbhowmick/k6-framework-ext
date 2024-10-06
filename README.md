@@ -42,3 +42,4 @@ npm run int; k6 cloud --show-logs=false ./build/app.bundle.js
 For powershell users on Windows-
 $env:K6_WEB_DASHBOARD="true"; npm run int;  k6 run ./build/app.bundle.js
 2. Browse URL: http://localhost:5665
+
