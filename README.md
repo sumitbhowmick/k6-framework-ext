@@ -6,22 +6,19 @@ Performance Testing repository for API performance tests.
 https://grafana.com/docs/k6/latest/set-up/install-k6/
 2. Verify installation success
 k6 version
+3. Ensure a stable version of node is installed.
 
 ## Test Configuration & Prerequisite
-1. Create "environments" folder if not present. Ensure int.env or uat.env file present with correct values for the intended environment
-2. Create "data" folder if not present. Ensure data file for intended script and intended environment is present.
-3. Ensure the data file name is updated in the in import section of the script to run. 
-import userfile from './data/<datafilename>.json';
-4. In k6 script, options & stages specify the test configuration. target is the concurrent user & duration is test duration.
-5. In webpack.config.js, update the "entry" field with the intended script name.
-6. In respective project folder, run command to install node dependencies- npm install 
+1. Run command to install node dependencies for the project - npm install
+2. Configure k6 test in config.js file. 
+options & stages specify the test configuration. target is the concurrent user & duration is test duration.
+3. In webpack.config.js, update the "entry" field with the intended script name.
 
 ## Test Execution on local - example
 1. Configure k6 test in config.js file
 2. npm run int;  k6 run build/app.bundle.js
 
 ## Test Execution on K6 Cloud
-Please note that every test executed on cloud has a financial impact by way of deduction of VU credit. 
 Step 1-4 is one time activity.
 1. Login to K6 cloud portal. https://app.k6.io/account/login
 2. Navigate to suitable project.
@@ -33,7 +30,7 @@ k6 login cloud --token <YOUR_K6_CLOUD_API_TOKEN>
 ## Log Handling
 1. To store logs in file in place of console.
 npm run int; k6 run --log-output=file=./log/demotest.log ./build/app.bundle.js
-New run log gets appended to specified log file.
+New run log gets appended to specified log file. Change the logfile name to keep logs seperate for separate runs.
 2. To stop cloud logs on local console 
 npm run int; k6 cloud --show-logs=false ./build/app.bundle.js
 
