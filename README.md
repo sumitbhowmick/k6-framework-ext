@@ -1,7 +1,6 @@
 # Performance Testing framework with K6
 
 Performance Testing repository for API performance tests.
-Tests are present in their respective folder.
 
 ## Installation
 1. Refer steps as per platform-
@@ -30,8 +29,7 @@ Step 1-4 is one time activity.
 3. Get token from Account Settings > API Token
 4. Execute on local CLI.
 k6 login cloud --token <YOUR_K6_CLOUD_API_TOKEN>
-5. Navigate to the folder /k6/illuvitars
-6. npm run int;  k6 cloud build/app.bundle.js
+5. npm run int;  k6 cloud build/app.bundle.js
 
 ## Log Handling
 1. To store logs in file in place of console.
@@ -39,3 +37,7 @@ npm run int; k6 run --log-output=file=./log/demotest.log ./build/app.bundle.js
 New run log gets appended to specified log file.
 2. To stop cloud logs on local console 
 npm run int; k6 cloud --show-logs=false ./build/app.bundle.js
+
+## Monitor Test
+1. To monitor the test progress and performance ore logs in file in place of console.
+$env:K6_WEB_DASHBOARD="true"; npm run int;  k6 run ./build/app.bundle.js
