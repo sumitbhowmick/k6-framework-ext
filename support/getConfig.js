@@ -21,10 +21,9 @@ export let configGlobal = (function () {
       if (res.status!=200){
         Logger.error(`All Products API Error: ${JSON.stringify(res.body, null, "  ")}`)
       }
-      Logger.info(`All Products API Response: ${JSON.stringify(res.body, null, "  ")}`)
+      //Logger.info(`All Products API Response: ${JSON.stringify(res.body, null, "  ")}`)
       expect(res.status, 'All Products API status code').to.equal(200);
-      let productList = JSON.parse(res.body)
-      instance.productList = productList
+      instance.productList = res
 
       return instance;
     }      

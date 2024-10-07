@@ -1,16 +1,20 @@
 
+//Common variable including environment variable can be passed here
 let commonProperty ={
   SYSTEM1_API_KEY: "System1APIKey",
   SYSTEM2_API_KEY: "System2APIKey",
   SYSTEM1_BASE_URL: "https://mybase1.dummy.com/",
   SYSTEM2_BASE_URL: "https://mybase2.dummy.com/",
 };
+
+//Script can have many alternative paths, mix of scenarios which can be controlled from the config options
 let scriptOptions ={
   dummyjson :{
-    startFrom :1 
+    startFrom :3
   }
 };
 
+//k6 options driving test execution config
 let k6_options = {
   k6_OPTIONS: {
     scenarios: {
@@ -60,6 +64,7 @@ let k6_options = {
 
 let configObject ={...commonProperty, ...scriptOptions, ...k6_options};
 
+//Binding all configs and make them available in actual code
 export function getConfig() {
     return configObject;
   

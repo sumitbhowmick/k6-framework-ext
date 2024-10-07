@@ -1,0 +1,10 @@
+time="2024-10-07T09:38:00+05:30" level=info msg="Start execution: jamesd, iterationId=0" source=console
+time="2024-10-07T09:38:02+05:30" level=info msg="fresh token generated" source=console
+time="2024-10-07T09:38:03+05:30" level=info msg="04:08:03 GMT jamesd iter0 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:38:08+05:30" level=info msg="04:08:08 GMT jamesd iter0 Randomly selected 2 products: [\"Knife\",\"House Showpiece Plant\"]" source=console
+time="2024-10-07T09:38:08+05:30" level=info msg="04:08:08 GMT jamesd iter0 Before:  [1,2,3,4,5,6,\"a\",\"b\",\"c\",\"d\"]" source=console
+time="2024-10-07T09:38:08+05:30" level=info msg="04:08:08 GMT jamesd iter0 After:  [[1,2,3],[4,5,6],[\"a\",\"b\",\"c\"],[\"d\"]]" source=console
+time="2024-10-07T09:38:39+05:30" level=info msg="Start execution: jamesd, iterationId=1" source=console
+time="2024-10-07T09:38:39+05:30" level=info msg="Accessed existing AuthTokenManager instance" source=console
+time="2024-10-07T09:38:39+05:30" level=info msg="04:08:39 GMT jamesd iter1 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:38:40+05:30" level=error msg="test run was aborted because k6 received a 'interrupt' signal"

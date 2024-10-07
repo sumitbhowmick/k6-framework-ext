@@ -1,0 +1,25 @@
+time="2024-10-07T09:34:48+05:30" level=info msg="Start execution: jamesd, iterationId=0" source=console
+time="2024-10-07T09:34:50+05:30" level=info msg="fresh token generated" source=console
+time="2024-10-07T09:34:51+05:30" level=info msg="04:04:51 GMT jamesd iter0 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:34:56+05:30" level=info msg="04:04:56 GMT jamesd iter0 Randomly selected 4 products: [\"Red Lipstick\",\"Blue \\u0026 Black Check Shirt\",\"Calvin Klein CK One\",\"Red Nail Polish\"]" source=console
+time="2024-10-07T09:34:56+05:30" level=info msg="04:04:56 GMT jamesd iter0 Before:  [1,2,3,4,5,6,\"a\",\"b\",\"c\",\"d\"]" source=console
+time="2024-10-07T09:34:56+05:30" level=info msg="04:04:56 GMT jamesd iter0 After:  [[1,2,3],[4,5,6],[\"a\",\"b\",\"c\"],[\"d\"]]" source=console
+time="2024-10-07T09:35:27+05:30" level=info msg="Start execution: jamesd, iterationId=1" source=console
+time="2024-10-07T09:35:27+05:30" level=info msg="Accessed existing AuthTokenManager instance" source=console
+time="2024-10-07T09:35:27+05:30" level=info msg="04:05:27 GMT jamesd iter1 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:35:32+05:30" level=info msg="04:05:32 GMT jamesd iter1 Randomly selected 5 products: [\"Dog Food\",\"Green Bell Pepper\",\"Eyeshadow Palette with Mirror\",\"Essence Mascara Lash Princess\",\"Powder Canister\"]" source=console
+time="2024-10-07T09:35:32+05:30" level=info msg="04:05:32 GMT jamesd iter1 Before:  [1,2,3,4,5,6,\"a\",\"b\",\"c\",\"d\"]" source=console
+time="2024-10-07T09:35:32+05:30" level=info msg="04:05:32 GMT jamesd iter1 After:  [[1,2,3],[4,5,6],[\"a\",\"b\",\"c\"],[\"d\"]]" source=console
+time="2024-10-07T09:36:03+05:30" level=info msg="Start execution: jamesd, iterationId=2" source=console
+time="2024-10-07T09:36:03+05:30" level=info msg="Accessed existing AuthTokenManager instance" source=console
+time="2024-10-07T09:36:03+05:30" level=info msg="04:06:03 GMT jamesd iter2 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:36:08+05:30" level=info msg="04:06:08 GMT jamesd iter2 Randomly selected 3 products: [\"iPhone 6\",\"iPhone 5s\",\"iPhone 13 Pro\"]" source=console
+time="2024-10-07T09:36:08+05:30" level=info msg="04:06:08 GMT jamesd iter2 Before:  [1,2,3,4,5,6,\"a\",\"b\",\"c\",\"d\"]" source=console
+time="2024-10-07T09:36:08+05:30" level=info msg="04:06:08 GMT jamesd iter2 After:  [[1,2,3],[4,5,6],[\"a\",\"b\",\"c\"],[\"d\"]]" source=console
+time="2024-10-07T09:36:39+05:30" level=info msg="Start execution: jamesd, iterationId=3" source=console
+time="2024-10-07T09:36:39+05:30" level=info msg="Accessed existing AuthTokenManager instance" source=console
+time="2024-10-07T09:36:40+05:30" level=info msg="04:06:40 GMT jamesd iter3 Authenticated User Name: {\"id\":4}" source=console
+time="2024-10-07T09:36:45+05:30" level=info msg="04:06:45 GMT jamesd iter3 Randomly selected 2 products: [\"Ice Cube Tray\",\"Hand Blender\"]" source=console
+time="2024-10-07T09:36:45+05:30" level=info msg="04:06:45 GMT jamesd iter3 Before:  [1,2,3,4,5,6,\"a\",\"b\",\"c\",\"d\"]" source=console
+time="2024-10-07T09:36:45+05:30" level=info msg="04:06:45 GMT jamesd iter3 After:  [[1,2,3],[4,5,6],[\"a\",\"b\",\"c\"],[\"d\"]]" source=console
+time="2024-10-07T09:37:16+05:30" level=error msg="test run was aborted because k6 received a 'interrupt' signal"
